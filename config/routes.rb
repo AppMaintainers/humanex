@@ -3,7 +3,8 @@ Humanex::Application.routes.draw do
   root :to => "page#index", :constraints => {:host => "humanex-tech.hu"}
   root :to => "page#en_index", :constraints => {:host => "humanex.com"}
   root :to => "page#en_index", :constraints => {:host => "humanex-tech.com"}
-  
+  root :to => "page#index"
+
   if Rails.env == "development"
     root :to => "page#index", :constraints => {:host => "localhost"}
   end

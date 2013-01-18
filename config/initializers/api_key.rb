@@ -1,1 +1,1 @@
-API_KEY = ENV.has_key?("MAPS_KEY") ? ENV["MAPS_KEY"] : "AIzaSyC1X7S7aHtDas7it6sKxa80VIrlR7NzG6Q"
+API_KEY = ENV.has_key?("MAPS_KEY") ? ENV["MAPS_KEY"] : ""

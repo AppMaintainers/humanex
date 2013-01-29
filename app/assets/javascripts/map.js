@@ -2,7 +2,7 @@ $(document).ready(function() {
   var map;
   function initialize() {
   var mapOptions = {
-    center: new google.maps.LatLng(47.476144,19.037697),
+    center: new google.maps.LatLng(47.470103,19.024458),
     zoom: 16,
     disableDefaultUI: true,
     zoomControl: true,
@@ -22,9 +22,9 @@ $(document).ready(function() {
   });
   
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(47.474432,19.036732),
+    position: new google.maps.LatLng(47.469109,19.025282),
     map: map,
-    title:"Newergies Kft."
+    title:"Humanex-TECH Kft."
   });
   
   google.maps.event.addListener(marker, 'click', function() {

@@ -13,8 +13,11 @@ Humanex::Application.routes.draw do
   constraints(RootDomain) do
     root :to => "page#index", :constraints => {:host => "humanex.hu"}
     root :to => "page#index", :constraints => {:host => "humanex-tech.hu"}
+    root :to => "page#en_index", :constraints => {:host => "www.humanex.com"}
+    root :to => "page#en_index", :constraints => {:host => "www.humanex-tech.com"}
     root :to => "page#en_index", :constraints => {:host => "humanex.com"}
     root :to => "page#en_index", :constraints => {:host => "humanex-tech.com"}
+    
     root :to => "page#index"
     
     if Rails.env == "development"

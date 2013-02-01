@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <% if request.host == 'humanex.hu' || 'humanex-tech.hu'%>
+  <% if request.host == 'humanex.hu' || 'humanex-tech.hu' %>
     <%= render partial: 'head' %>
-  <% else %>
+  <% elsif request.host == 'humanex.com' || 'humanex-tech.com' %>
     <%= render partial: 'en_head' %>
   <% end %>
   <meta name="robots" content="all">
